@@ -1,0 +1,21 @@
+{
+  "name": "grpc-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-recipe": "node ./recipe/main.js",
+    "start-processor": "node ./processor/main.js",
+    "start": "concurrently node /recipe/main.js node /processor/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.11",
+    "@grpc/proto-loader": "^0.7.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
